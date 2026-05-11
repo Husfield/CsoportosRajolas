@@ -2,10 +2,35 @@
 import turtle
 
 turtle.width(3)
+turtle.speed(0)
 
-hossz=100
 szog=90
 
+turtle.penup()
+turtle.goto(-20 , -2)
+turtle.pendown()
+turtle.color("gray")
+
+turtle.right(szog)
+
+u=0
+
+turtle.begin_fill()
+
+while u<2:
+    turtle.forward(230)
+    turtle.left(szog)
+    turtle.forward(40)
+    turtle.left(szog)
+    u += 1
+
+turtle.fillcolor("gray")
+turtle.end_fill()
+
+turtle.left(90)
+turtle.forward(20)
+
+turtle.color("black")
 
 #hatter
 turtle.bgcolor("lightblue")
